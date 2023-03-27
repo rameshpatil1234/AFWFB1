@@ -12,8 +12,8 @@ class Test_InValidLogin(BaseTest):
             un = Excel.get_cell_value("../data/input.xlsx", "Invalidlogin", 2, 1)
             pw = Excel.get_cell_value("../data/input.xlsx", "Invalidlogin", 2, 2)
         except:
-            un = Excel.get_cell_value("data/input.xlsx", "Invalidlogin", 2, 1)
-            pw = Excel.get_cell_value("data/input.xlsx", "Invalidlogin", 2, 2)
+            un = Excel.get_cell_value("./data/input.xlsx", "Invalidlogin", 2, 1)
+            pw = Excel.get_cell_value("./data/input.xlsx", "Invalidlogin", 2, 2)
         loginpage = LoginPage(self.driver)
         loginpage.set_username(un)
         loginpage.set_password(pw)
