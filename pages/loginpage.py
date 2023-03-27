@@ -7,7 +7,7 @@ class LoginPage:
     __pwTB = (By.ID, "pass")
     __loginBTN = (By.NAME, "login")
     __errMSG = (By.XPATH, "//div[contains(text(),'incorrect')]")
-###
+
     def __init__(self,driver):
         self.__driver = driver
 
