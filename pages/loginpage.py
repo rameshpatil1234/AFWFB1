@@ -22,7 +22,7 @@ class LoginPage:
 
     def verify_err_msg_is_displayed(self,wait):
         try:
-            result=wait.until(EC.visibility_of_element_located(self.__errMSG))
+            result = wait.until(EC.visibility_of_element_located(self.__errMSG))
             print("Error msg is displayed")
             return True
         except:
